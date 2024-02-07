@@ -13,23 +13,23 @@ def populate():
     # through each data structure, and add the data to our models.
     python_pages = [
         {'title': 'Official Python Tutorial',
-        'url':'http://docs.python.org/3/tutorial/'},
+        'url':'http://docs.python.org/3/tutorial/','views':100},
         {'title':'How to Think like a Computer Scientist',
-        'url':'http://www.greenteapress.com/thinkpython/'},
+        'url':'http://www.greenteapress.com/thinkpython/','views':90},
         {'title':'Learn Python in 10 Minutes',
-        'url':'http://www.korokithakis.net/tutorials/python/'} ]
+        'url':'http://www.korokithakis.net/tutorials/python/','views':80} ]
     django_pages = [
         {'title':'Official Django Tutorial',
-        'url':'https://docs.djangoproject.com/en/2.1/intro/tutorial01/'},
+        'url':'https://docs.djangoproject.com/en/2.1/intro/tutorial01/','views':70},
         {'title':'Django Rocks',
-        'url':'http://www.djangorocks.com/'},
+        'url':'http://www.djangorocks.com/','views':60},
         {'title':'How to Tango with Django',
-        'url':'http://www.tangowithdjango.com/'} ]
+        'url':'http://www.tangowithdjango.com/','views':50} ]
     other_pages = [
         {'title':'Bottle',
-        'url':'http://bottlepy.org/docs/dev/'},
+        'url':'http://bottlepy.org/docs/dev/','views':110},
         {'title':'Flask',
-        'url':'http://flask.pocoo.org'} ]
+        'url':'http://flask.pocoo.org','views':1} ]
     cats = {'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
         'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
         'Other Frameworks': {'pages': other_pages, 'views': 32, 'likes': 16}}
