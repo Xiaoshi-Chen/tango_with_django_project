@@ -13,7 +13,7 @@ def populate():
     # through each data structure, and add the data to our models.
     python_pages = [
         {'title': 'Official Python Tutorial',
-        'url':'http://docs.python.org/3/tutorial/','views':100},
+        'url':'http://docs.python.org/3/tutorial/','views':92},
         {'title':'How to Think like a Computer Scientist',
         'url':'http://www.greenteapress.com/thinkpython/','views':90},
         {'title':'Learn Python in 10 Minutes',
@@ -29,7 +29,7 @@ def populate():
         {'title':'Bottle',
         'url':'http://bottlepy.org/docs/dev/','views':110},
         {'title':'Flask',
-        'url':'http://flask.pocoo.org','views':1} ]
+        'url':'http://flask.pocoo.org','views':10} ]
     cats = {'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
         'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
         'Other Frameworks': {'pages': other_pages, 'views': 32, 'likes': 16}}
