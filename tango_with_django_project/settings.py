@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 
 LOGIN_URL = 'rango:login'
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 ### Media
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'

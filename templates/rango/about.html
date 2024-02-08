@@ -7,7 +7,9 @@
 {% block body_block %}
     <h1>Rango says...</h1>
     <p>Here is the about page.</p>
-    
+    {% if visits %}
+        <p>Visits: {{ visits }}</p>
+    {% endif %}
     <div>
         hey there partner! <br />
         <strong>{{ your_name }}</strong> <br />
