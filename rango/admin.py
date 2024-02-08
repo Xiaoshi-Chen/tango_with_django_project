@@ -1,6 +1,7 @@
 # Register your models here.
 from django.contrib import admin
 from rango.models import Category, Page
+from rango.models import UserProfile
 
 ## 在网页上创建 category and page
 admin.site.register(Category)
@@ -14,3 +15,4 @@ class CategoryAdmin(admin.ModelAdmin):
 
 # Update the registration to include this customised interface
 admin.site.register(Page, PageAdmin)
+admin.site.register(UserProfile)
