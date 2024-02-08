@@ -29,6 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = 'rango:login'
+
 ### Media
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
