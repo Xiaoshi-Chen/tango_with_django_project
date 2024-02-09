@@ -14,20 +14,6 @@
         <strong>{{ boldmessage }}</strong> <br />
     </div>
 
-    <!-- <div>
-    {% if categories %}
-        <ul>
-        {% for category in categories %}
-            <li>
-                <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a>
-            </li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        <strong>There are no categories present.</strong>
-    {% endif %}
-    </div> -->
-
     
     <!--  Most liked Categories-->
     <div>
@@ -49,10 +35,10 @@
 
     <!-- Most Viewed Pages -->
     <div>
-        <h2>Most Viewed Pages.</h2>
-        {% if top_pages %}
+        <h2>Most Viewed Pages</h2>
+        {% if pages %}
             <ul>
-                {% for page in top_pages %}
+                {% for page in pages %}
                     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
                 {% endfor %}
             </ul>

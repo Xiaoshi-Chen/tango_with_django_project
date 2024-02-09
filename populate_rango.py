@@ -4,6 +4,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE','tango_with_django_project.settin
 import django
 django.setup()
 from rango.models import Category, Page
+import random
 
 def populate():
     # First, we will create lists of dictionaries containing the pages
@@ -48,13 +49,25 @@ def populate():
 def add_page(cat, title, url, views=0):
     p = Page.objects.get_or_create(category=cat, title=title)[0]
     p.url=url
-    p.views=views
+    if views > 0:
+        p.views=views
+    else :
+        p.views = random.randint(1,200)
     p.save()
     return p
-def add_cat(name):
-    c = Category.objects.get_or_create(name=name)[0]
-    c.save()
-    return c
+def add_cat(title):
+    cat = Category.objects.get_or_create(name=title)[0]
+    if title=="Python":
+        cat.views = 128
+        cat.likes = 64
+    elif title=="Django":
+        cat.views = 64
+        cat.likes = 32
+    else:
+        cat.views = 32
+        cat.likes = 16  
+    cat.save()
+    return cat
 
     # Start execution here!
 if __name__ == '__main__':

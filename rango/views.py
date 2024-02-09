@@ -15,10 +15,10 @@ def index(request):
     context_dict['boldmessage'] = 'Crunchy, creamy, cookie, candy, cupcake!'
     context_dict['categories'] = category_list
 
-    top_pages = Page.objects.order_by('-views')[:5]
-    context_dict['top_pages'] = top_pages
+    pages = Page.objects.order_by('-views')[:5]
+    context_dict['pages'] = pages
 
-    top_categories = Category.objects.order_by("-likes")[:3]
+    top_categories = Category.objects.order_by("-likes")[:5]
     context_dict['top_categories'] = top_categories
     
     # Return a rendered response to send to the client.
