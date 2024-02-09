@@ -8,6 +8,7 @@ class Category(models.Model):
     
     def __str__(self):
         return self.name
+    
 class Page(models.Model):
     ## ForeignKey one to one (78)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
