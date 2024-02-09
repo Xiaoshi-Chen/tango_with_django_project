@@ -10,7 +10,7 @@
 
 {% block body_block %}
     {%if category%}
-        <li><a href="{% url 'rango:index' %}">Home</a></li>
+        <h1>{{category.name}}</h1>
         {%if pages%}
         <ul>
             {%for page in pages%}
@@ -28,6 +28,4 @@
     {%else%}
         The specified category does not exist.
     {%endif%}
-
-
 {% endblock %}
