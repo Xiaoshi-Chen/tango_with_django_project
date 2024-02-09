@@ -14,19 +14,6 @@
         <strong>{{ boldmessage }}</strong> <br />
     </div>
 
-    <!-- <div>
-    {% if categories %}
-        <ul>
-        {% for category in categories %}
-            <li>
-                <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a>
-            </li>
-        {% endfor %}
-        </ul>
-    {% else %}
-        <strong>There are no categories present.</strong>
-    {% endif %}
-    </div> -->
 
     
     <!--  Most liked Categories-->
@@ -63,10 +50,10 @@
         {% endif %}
     </div>
 
-
+    
     <div>
         <a href="/rango/about/">About</a><br />
-        <a href="/rango/add_category/">Add a New Category</a><br>
+        <a href="{% url 'rango:add_category' %}">Add a New Category</a>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" /> 
         
     </div>
